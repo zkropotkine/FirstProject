@@ -92,10 +92,10 @@
             </objects>
             <point key="canvasLocation" x="74" y="128"/>
         </scene>
-        <!--View Controller-->
+        <!--Second PageVC-->
         <scene sceneID="xEu-pS-nY6">
             <objects>
-                <viewController id="6J7-v3-IGA" sceneMemberID="viewController">
+                <viewController id="6J7-v3-IGA" customClass="SecondPageVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cPr-6f-q13">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -107,10 +107,6 @@
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Ofe-Vs-bSj">
-                                <rect key="frame" x="16" y="100" width="288" height="338"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Forward.png" id="d2D-Da-7QX">
                                 <rect key="frame" x="212" y="456" width="92" height="92"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -118,6 +114,9 @@
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="DoP-vX-axQ">
                                 <rect key="frame" x="14" y="50" width="292" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="citySliderChanged:" destination="6J7-v3-IGA" eventType="valueChanged" id="hs7-Zg-EM8"/>
+                                </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="I1J-KG-SFJ">
                                 <rect key="frame" x="212" y="456" width="92" height="92"/>
@@ -129,10 +128,18 @@
                                     <segue destination="ScE-Uz-u7P" kind="modal" id="fV2-ec-0Nr"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LakeTahoe.jpg" id="Ofe-Vs-bSj">
+                                <rect key="frame" x="16" y="100" width="288" height="338"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="U2i-Ho-6fE"/>
+                    <connections>
+                        <outlet property="imgCity" destination="Ofe-Vs-bSj" id="TQO-9A-1nY"/>
+                        <outlet property="sldAlpha" destination="DoP-vX-axQ" id="TDL-U3-pIm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iCN-3H-2Bh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -208,6 +215,7 @@
         <image name="Background.png" width="92" height="92"/>
         <image name="Forward.png" width="92" height="92"/>
         <image name="GrowUp.png" width="92" height="92"/>
+        <image name="LakeTahoe.jpg" width="2841" height="4465"/>
         <image name="Photo.png" width="92" height="92"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

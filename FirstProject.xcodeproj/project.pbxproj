@@ -23,6 +23,8 @@
 		DA2F11F819DD266800471CB6 /* Buceo28.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA2F11F519DD266800471CB6 /* Buceo28.jpg */; };
 		DA2F11F919DD266800471CB6 /* Kluivert.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA2F11F619DD266800471CB6 /* Kluivert.jpg */; };
 		DA2F11FA19DD266800471CB6 /* Test.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2F11F719DD266800471CB6 /* Test.png */; };
+		DA2F11FC19DDC10800471CB6 /* LakeTahoe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA2F11FB19DDC10800471CB6 /* LakeTahoe.jpg */; };
+		DA2F11FF19DDC1EA00471CB6 /* SecondPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2F11FE19DDC1EA00471CB6 /* SecondPageVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,9 @@
 		DA2F11F519DD266800471CB6 /* Buceo28.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Buceo28.jpg; path = Me/Buceo28.jpg; sourceTree = "<group>"; };
 		DA2F11F619DD266800471CB6 /* Kluivert.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Kluivert.jpg; path = Me/Kluivert.jpg; sourceTree = "<group>"; };
 		DA2F11F719DD266800471CB6 /* Test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Test.png; path = Me/Test.png; sourceTree = "<group>"; };
+		DA2F11FB19DDC10800471CB6 /* LakeTahoe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LakeTahoe.jpg; sourceTree = "<group>"; };
+		DA2F11FD19DDC1EA00471CB6 /* SecondPageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondPageVC.h; sourceTree = "<group>"; };
+		DA2F11FE19DDC1EA00471CB6 /* SecondPageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondPageVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +162,8 @@
 			children = (
 				6513C2C519DCEFDD00E1072B /* FirstPageVC.h */,
 				6513C2C619DCEFDD00E1072B /* FirstPageVC.m */,
+				DA2F11FD19DDC1EA00471CB6 /* SecondPageVC.h */,
+				DA2F11FE19DDC1EA00471CB6 /* SecondPageVC.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -171,6 +178,7 @@
 		DA2F11E919DD23A700471CB6 /* Me */ = {
 			isa = PBXGroup;
 			children = (
+				DA2F11FB19DDC10800471CB6 /* LakeTahoe.jpg */,
 				DA2F11F519DD266800471CB6 /* Buceo28.jpg */,
 				DA2F11F619DD266800471CB6 /* Kluivert.jpg */,
 				DA2F11F719DD266800471CB6 /* Test.png */,
@@ -269,6 +277,7 @@
 				6513C2CC19DCEFDD00E1072B /* Images.xcassets in Resources */,
 				DA2F11E619DCFFE500471CB6 /* Photo.png in Resources */,
 				DA2F11E419DCFFE500471CB6 /* Forward.png in Resources */,
+				DA2F11FC19DDC10800471CB6 /* LakeTahoe.jpg in Resources */,
 				DA2F11F919DD266800471CB6 /* Kluivert.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +298,7 @@
 			files = (
 				6513C2C119DCEFDD00E1072B /* AppDelegate.m in Sources */,
 				6513C2C419DCEFDD00E1072B /* FirstProject.xcdatamodeld in Sources */,
+				DA2F11FF19DDC1EA00471CB6 /* SecondPageVC.m in Sources */,
 				6513C2C719DCEFDD00E1072B /* FirstPageVC.m in Sources */,
 				6513C2BE19DCEFDD00E1072B /* main.m in Sources */,
 			);

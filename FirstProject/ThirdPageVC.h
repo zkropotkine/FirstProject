@@ -10,7 +10,7 @@
 
 @interface ThirdPageVC : UIViewController
 @property (strong, nonatomic) IBOutlet UIButton *btnPlayVideo;
-
+ 
 @property (strong, nonatomic) IBOutlet UIButton *btnStopVideo;
 
 - (IBAction)stopVideoBtnPressed:(id)sender;

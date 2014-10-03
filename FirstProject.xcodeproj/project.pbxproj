@@ -15,6 +15,12 @@
 		6513C2CC19DCEFDD00E1072B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6513C2CB19DCEFDD00E1072B /* Images.xcassets */; };
 		6513C2CF19DCEFDD00E1072B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6513C2CD19DCEFDD00E1072B /* LaunchScreen.xib */; };
 		6513C2DB19DCEFDD00E1072B /* FirstProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6513C2DA19DCEFDD00E1072B /* FirstProjectTests.m */; };
+		6513C2E819DE27D200E1072B /* ThirdPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6513C2E719DE27D200E1072B /* ThirdPageVC.m */; };
+		6513C2ED19DE29F000E1072B /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6513C2EC19DE29F000E1072B /* MediaPlayer.framework */; };
+		6513C2EF19DE2B9300E1072B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6513C2EE19DE2B9300E1072B /* Foundation.framework */; };
+		6513C2F119DE2BA800E1072B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6513C2F019DE2BA800E1072B /* UIKit.framework */; };
+		6513C2F319DE2BB700E1072B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6513C2F219DE2BB700E1072B /* CoreGraphics.framework */; };
+		65A4524119DE2FFE005E3D38 /* Sample3.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 65A4524019DE2FFE005E3D38 /* Sample3.m4v */; };
 		DA2F11E219DCFFE500471CB6 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2F11DD19DCFFE500471CB6 /* Background.png */; };
 		DA2F11E319DCFFE500471CB6 /* Backward.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2F11DE19DCFFE500471CB6 /* Backward.png */; };
 		DA2F11E419DCFFE500471CB6 /* Forward.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2F11DF19DCFFE500471CB6 /* Forward.png */; };
@@ -52,6 +58,13 @@
 		6513C2D419DCEFDD00E1072B /* FirstProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6513C2D919DCEFDD00E1072B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6513C2DA19DCEFDD00E1072B /* FirstProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstProjectTests.m; sourceTree = "<group>"; };
+		6513C2E619DE27D200E1072B /* ThirdPageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdPageVC.h; sourceTree = "<group>"; };
+		6513C2E719DE27D200E1072B /* ThirdPageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdPageVC.m; sourceTree = "<group>"; };
+		6513C2EC19DE29F000E1072B /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		6513C2EE19DE2B9300E1072B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6513C2F019DE2BA800E1072B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6513C2F219DE2BB700E1072B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		65A4524019DE2FFE005E3D38 /* Sample3.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Sample3.m4v; sourceTree = "<group>"; };
 		DA2F11DD19DCFFE500471CB6 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
 		DA2F11DE19DCFFE500471CB6 /* Backward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Backward.png; sourceTree = "<group>"; };
 		DA2F11DF19DCFFE500471CB6 /* Forward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Forward.png; sourceTree = "<group>"; };
@@ -70,6 +83,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6513C2F319DE2BB700E1072B /* CoreGraphics.framework in Frameworks */,
+				6513C2F119DE2BA800E1072B /* UIKit.framework in Frameworks */,
+				6513C2EF19DE2B9300E1072B /* Foundation.framework in Frameworks */,
+				6513C2ED19DE29F000E1072B /* MediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +106,7 @@
 				6513C2BA19DCEFDD00E1072B /* FirstProject */,
 				6513C2D719DCEFDD00E1072B /* FirstProjectTests */,
 				6513C2B919DCEFDD00E1072B /* Products */,
+				6513C2F419DE2BBE00E1072B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +137,8 @@
 		6513C2BB19DCEFDD00E1072B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				65A4524019DE2FFE005E3D38 /* Sample3.m4v */,
+				6513C2EA19DE285F00E1072B /* Videos */,
 				DA2F11DC19DCFFE500471CB6 /* Images */,
 				6513C2BC19DCEFDD00E1072B /* Info.plist */,
 				6513C2BD19DCEFDD00E1072B /* main.m */,
@@ -143,6 +163,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6513C2EA19DE285F00E1072B /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Videos;
+			sourceTree = "<group>";
+		};
+		6513C2F419DE2BBE00E1072B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6513C2F219DE2BB700E1072B /* CoreGraphics.framework */,
+				6513C2F019DE2BA800E1072B /* UIKit.framework */,
+				6513C2EE19DE2B9300E1072B /* Foundation.framework */,
+				6513C2EC19DE29F000E1072B /* MediaPlayer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DA2F11DC19DCFFE500471CB6 /* Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +202,8 @@
 				6513C2C619DCEFDD00E1072B /* FirstPageVC.m */,
 				DA2F11FD19DDC1EA00471CB6 /* SecondPageVC.h */,
 				DA2F11FE19DDC1EA00471CB6 /* SecondPageVC.m */,
+				6513C2E619DE27D200E1072B /* ThirdPageVC.h */,
+				6513C2E719DE27D200E1072B /* ThirdPageVC.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -270,6 +310,7 @@
 				DA2F11E319DCFFE500471CB6 /* Backward.png in Resources */,
 				DA2F11FA19DD266800471CB6 /* Test.png in Resources */,
 				DA2F11F819DD266800471CB6 /* Buceo28.jpg in Resources */,
+				65A4524119DE2FFE005E3D38 /* Sample3.m4v in Resources */,
 				DA2F11E519DCFFE500471CB6 /* GrowUp.png in Resources */,
 				6513C2CA19DCEFDD00E1072B /* Main.storyboard in Resources */,
 				DA2F11E219DCFFE500471CB6 /* Background.png in Resources */,
@@ -299,6 +340,7 @@
 				6513C2C119DCEFDD00E1072B /* AppDelegate.m in Sources */,
 				6513C2C419DCEFDD00E1072B /* FirstProject.xcdatamodeld in Sources */,
 				DA2F11FF19DDC1EA00471CB6 /* SecondPageVC.m in Sources */,
+				6513C2E819DE27D200E1072B /* ThirdPageVC.m in Sources */,
 				6513C2C719DCEFDD00E1072B /* FirstPageVC.m in Sources */,
 				6513C2BE19DCEFDD00E1072B /* main.m in Sources */,
 			);
@@ -376,7 +418,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -411,7 +453,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

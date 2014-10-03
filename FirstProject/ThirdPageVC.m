@@ -210,4 +210,8 @@
      [self startPlayingVideo:sender];
 }
 
+- (IBAction)btnNextPagePressed:(id)sender {
+    [self stopPlayingVideo:sender];
+}
+
 @end

@@ -15,6 +15,7 @@
 
 - (IBAction)stopVideoBtnPressed:(id)sender;
 - (IBAction)playVideoBtnPressed:(id)sender;
+- (IBAction)btnNextPagePressed:(id)sender;
 
 
 @end

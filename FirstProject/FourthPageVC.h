@@ -12,7 +12,10 @@
 - (IBAction)moreGoalsBtnPressed:(id)sender;
 
 - (IBAction)lessGoalsBtnPressed:(id)sender;
+- (IBAction)segContTeamPressed:(id)sender;
 
+@property (strong, nonatomic) IBOutlet UIImageView *teamImages;
 @property (strong, nonatomic) IBOutlet UITextField *txtGoalField;
+@property (strong, nonatomic) IBOutlet UISegmentedControl *teamSegmentedControl;
 
 @end

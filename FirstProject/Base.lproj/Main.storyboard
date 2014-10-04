@@ -235,8 +235,11 @@
                                     <segment title="F.C Barcelona"/>
                                     <segment title="Real Madrid"/>
                                 </segments>
+                                <connections>
+                                    <action selector="segContTeamPressed:" destination="eqx-GE-jQf" eventType="valueChanged" id="WCl-oV-i7Q"/>
+                                </connections>
                             </segmentedControl>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="DqR-jv-MiG">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="DqR-jv-MiG">
                                 <rect key="frame" x="16" y="100" width="288" height="206"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -297,6 +300,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="teamImages" destination="DqR-jv-MiG" id="Yoc-JJ-A9M"/>
+                        <outlet property="teamSegmentedControl" destination="FCv-cm-7DC" id="Q5i-2o-IxW"/>
                         <outlet property="txtGoalField" destination="hbW-zF-GAt" id="WLC-WR-KOg"/>
                     </connections>
                 </viewController>

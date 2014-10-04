@@ -13,11 +13,13 @@
 @end
 
 @implementation FourthPageVC
-int goalsCnt;
+int barcaGoalCnt;
+int madridGoalCnt;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.teamImages.image = [UIImage imageNamed:@"Barcelona.jpg"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -37,36 +39,84 @@ int goalsCnt;
 
 - (IBAction)moreGoalsBtnPressed:(id)sender
 {
-    if (goalsCnt < 9)
+    int goalCnt;
+    
+    if (self.teamSegmentedControl.selectedSegmentIndex == 0) {
+        goalCnt = barcaGoalCnt;
+    } else {
+        goalCnt = madridGoalCnt;
+    }
+    
+    if (goalCnt < 9)
     {
-        goalsCnt++;
+        goalCnt++;
     }
     else
     {
-        goalsCnt = 0;
+        goalCnt = 0;
     }
     
-    NSString *string1 = [NSString stringWithFormat:@"%d", goalsCnt];
+    NSString *string1 = [NSString stringWithFormat:@"%d", goalCnt];
     
     
     self.txtGoalField.text = string1;
+    
+    if (self.teamSegmentedControl.selectedSegmentIndex == 0) {
+        barcaGoalCnt = goalCnt;
+    } else {
+        madridGoalCnt = goalCnt;
+    }
+    
 }
 
 - (IBAction)lessGoalsBtnPressed:(id)sender {
-    if (goalsCnt > 0)
+    int goalCnt;
+    
+    if (self.teamSegmentedControl.selectedSegmentIndex == 0) {
+        goalCnt = barcaGoalCnt;
+    } else {
+        goalCnt = madridGoalCnt;
+    }
+    
+    if (goalCnt > 0)
     {
-        goalsCnt--;
+        goalCnt--;
     }
     else
     {
-        goalsCnt = 9;
+        goalCnt = 9;
     }
     
     
-    NSString *string1 = [NSString stringWithFormat:@"%d", goalsCnt];
+    NSString *string1 = [NSString stringWithFormat:@"%d", goalCnt];
     
     
     self.txtGoalField.text = string1;
+    if (self.teamSegmentedControl.selectedSegmentIndex == 0) {
+        barcaGoalCnt = goalCnt;
+    } else {
+        madridGoalCnt = goalCnt;
+    }
+}
+
+- (IBAction)segContTeamPressed:(id)sender {
+    switch (self.teamSegmentedControl.selectedSegmentIndex)
+    {
+        case 0:{
+            self.teamImages.image = [UIImage imageNamed:@"Barcelona.jpg"];
+            NSString *string = [NSString stringWithFormat:@"%d", barcaGoalCnt];
+            self.txtGoalField.text = string;
+            break;
+        }
+        case 1: {
+            self.teamImages.image = [UIImage imageNamed:@"Madrid.jpg"];
+            NSString *string = [NSString stringWithFormat:@"%d", madridGoalCnt];
+            self.txtGoalField.text = string;
+            break;
+        }
+        default: 
+            break; 
+    }
 }
 
 

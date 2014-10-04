@@ -19,7 +19,9 @@ int imageCnt;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.lblYears.text = @"Unborn";
+    self.imgGrowUpPicture.image = [UIImage imageNamed:@"Sperm.png"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -85,22 +87,28 @@ int imageCnt;
     {
         case 0:
             self.imgGrowUpPicture.image = [UIImage imageNamed:@"Buceo28.jpg"];
+            self.lblYears.text = @"5";
             break;
         case 1:
             self.imgGrowUpPicture.image = [UIImage imageNamed:@"Kluivert.jpg"];
+             self.lblYears.text = @"10";
             break;
         case 2:
             self.imgGrowUpPicture.image = [UIImage imageNamed:@"Test.png"];
+             self.lblYears.text = @"15";
             break;
         case 3:
             self.imgGrowUpPicture.image = [UIImage imageNamed:@"Buceo28.jpg"];
+             self.lblYears.text = @"20";
             break;
         case 4:
             self.imgGrowUpPicture.image = [UIImage imageNamed:@"Kluivert.jpg"];
+             self.lblYears.text = @"25";
             break;
         default:
             imageCnt = 0;
             self.imgGrowUpPicture.image = [UIImage imageNamed:@"Test.png"];
+             self.lblYears.text = @"30";
             break;
     }
     ++imageCnt;

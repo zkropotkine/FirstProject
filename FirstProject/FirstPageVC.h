@@ -11,6 +11,7 @@
 @interface FirstPageVC : UIViewController
 @property (strong, nonatomic) IBOutlet UILabel *lblName;
 @property (strong, nonatomic) IBOutlet UIImageView *imgGrowUpPicture;
+@property (strong, nonatomic) IBOutlet UITextField *lblYears;
 
 
 - (IBAction)btnBackgroundPressed:(id)sender;
